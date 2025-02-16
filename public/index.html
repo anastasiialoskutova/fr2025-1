@@ -6,6 +6,7 @@
     <title>Реєстрація</title>
     <link rel="stylesheet" href="index.css"></head>
 <body>
+    <a href="admin.html">◁Перейти до сторінки адміністратора</a>
     <div class="container">
         <h2>Реєстрація клієнта</h2>
         <form id="registrationForm" action="/registration" method="post" enctype="multipart/form-data">
@@ -72,9 +73,11 @@
             <label for="agreement" value="true">Я погоджуюсь</label><br>
 
             <label for="comment">Коментар:</label><br>
-            <textarea id="comment" name="comment" rows="3" cols="12" placeholder="Не обовʼязково"></textarea><br>
+            <textarea id="comment" name="comment" rows="1" cols="25" placeholder="Не обовʼязково"></textarea><br>
 
-            <button type="submit">Зареєструватися</button><br><br>
+            <button type="submit">Зареєструватися</button>
+            <button type="reset">Очистити</button><br>
+
 
             <label for="result_test">Result Test:</label>
             <input type="text" id="result_test" name="result_test"><br>

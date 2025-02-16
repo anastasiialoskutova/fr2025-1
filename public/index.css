@@ -3,6 +3,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+
 }
 
 .container {
@@ -44,4 +46,9 @@ fieldset{
     background: #e3f2fd;
     border: none;
     border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
