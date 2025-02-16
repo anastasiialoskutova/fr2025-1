@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('uploads'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const storage = multer.diskStorage({//
+const storage = multer.diskStorage({
     destination: 'uploads/',
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname));
@@ -38,7 +38,7 @@ app.get('/registration', (req, res) => {
 });
 
 app.post('/registration', upload.single('photo'), (req, res) => {
-    const { name, email, password, phone, dob, gender, country, result_test, result_game } = req.body;
+    const { name, email, password, phone, dob, gender, country, color, comment, result_test, result_game } = req.body;
 
     if (!name || !email || !password || !phone || !dob || !gender || !country) {
         return res.status(400).json({ message: "Будь ласка, заповніть всі поля!" });
@@ -64,6 +64,8 @@ app.post('/registration', upload.single('photo'), (req, res) => {
         dob,
         gender,
         country,
+        color,  
+        comment,  
         photo: req.file.filename, 
         agreement: req.body.agreement === 'true',
         result_test: result_test || null,

@@ -10,7 +10,9 @@
     <div class="container">
         <h2>Реєстрація клієнта</h2>
         <form id="registrationForm" action="/registration" method="post" enctype="multipart/form-data">
-            <label for="name">Ім'я та Прізвище:</label>
+            <fieldset>
+                <legend>Персональна інформація:</legend>
+                <label for="name">Ім'я та Прізвище:</label>
             <input type="text" id="name" name="name" required><br>
 
             <label for="email">Email:</label>
@@ -29,27 +31,49 @@
             <input type="date" id="dob" name="dob" required><br>
 
             <label>Стать:</label><br>
-            <input type="radio" id="male" name="gender" value="male" required>
+            <input type="radio" id="male" name="gender" value="Чоловіча" required>
             <label for="male">Чоловіча</label><br>
 
-            <input type="radio" id="female" name="gender" value="female" required>
+            <input type="radio" id="female" name="gender" value="Жіноча" required>
             <label for="female">Жіноча</label><br>
 
             <label for="country">Країна:</label>
             <select id="country" name="country" required>
-                <option value="Україна">Україна</option>
-                <option value="США">США</option>
-                <option value="Польща">Польща</option>
-                <option value="Польща">Китай</option>
-                <option value="Польща">Італія</option>
+                <optgroup label="Країни">
+                    <option value="Україна">Україна</option>
+                    <option value="США">США</option>
+                    <option value="Польща">Польща</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Італія">Італія</option>
+                </optgroup>
+                
             </select><br>
 
-            <label for="agreement">Згода на обробку даних:</label><br>
-            <input type="checkbox" id="agreement" name="agreement" required>
-            <label for="agreement" value="true">Я погоджуюсь</label><br>
+            <label for="colors">Улюблений колір:</label>
+            <input list="colors" name="color" id="color" required>
+
+            <datalist id="colors">
+                <option value="Червоний">
+                <option value="Помаранчевий">
+                <option value="Жовтий">
+                <option value="Зелений">
+                <option value="Блакитний">
+            </datalist><br>
 
             <label for="photo">Фото профілю:</label>
             <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <label for="output">Примітка:</label>
+            <output id="output">Уважно перевірте свої дані!</output><br>
+            </fieldset>
+            
+
+            <label for="agreement">Згода на обробку даних:</label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement" value="true">Я погоджуюсь</label><br>
+
+            <label for="comment">Коментар:</label><br>
+            <textarea id="comment" name="comment" rows="3" cols="12" placeholder="Не обовʼязково"></textarea><br>
 
             <button type="submit">Зареєструватися</button><br><br>
 

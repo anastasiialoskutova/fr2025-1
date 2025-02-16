@@ -13,6 +13,8 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
   const photo = document.getElementById('photo').files[0];
   const result_test = document.getElementById('result_test').value;
   const result_game = document.getElementById('result_game').value;
+  const color = document.getElementById('color').value; 
+  const comment = document.getElementById('comment').value; 
 
   if (password !== confirmPassword) {
       alert("Паролі не співпадають!");
@@ -27,10 +29,12 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
   formData.append('dob', dob);
   formData.append('gender', gender);
   formData.append('country', country);
-  formData.append('agreement', agreement ? 'true' : 'false'); // Виправлено
+  formData.append('agreement', agreement ? 'true' : 'false'); 
   formData.append('photo', photo);
   formData.append('result_test', result_test);
   formData.append('result_game', result_game);
+  formData.append('color', color); 
+  formData.append('comment', comment); 
 
   try {
     const response = await fetch('http://localhost:3000/registration', {

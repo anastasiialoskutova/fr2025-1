@@ -26,5 +26,37 @@
     "agreement": true,
     "result_test": null,
     "result_game": null
+  },
+  {
+    "id": 3,
+    "name": "Белла Хао Хао",
+    "email": "anastasiia.losku@lnu.edu.ua",
+    "password": "$2b$10$pZFWdLKTbSOjme8hIGwwce2jm31sNU4bqugTIijoZpxN7S6i7dhPG",
+    "phone": "0666260082",
+    "dob": "2025-02-05",
+    "gender": "female",
+    "country": "Польща",
+    "color": "Рожевий",
+    "comment": "лалала",
+    "photo": "1739734219974.png",
+    "agreement": true,
+    "result_test": null,
+    "result_game": null
+  },
+  {
+    "id": 4,
+    "name": "Анасіаста🩵",
+    "email": "anastasiia.loskutov000a@lnu.edu.ua",
+    "password": "$2b$10$0Dcta8M8Hdc8uamTnKmCMuXfK.ZwfZdrHTC4ZJW/q2RSUjHAPtPsu",
+    "phone": "0666260082",
+    "dob": "2025-02-05",
+    "gender": "Жіноча",
+    "country": "Китай",
+    "color": "Червоний",
+    "comment": "",
+    "photo": "1739734885100.jpg",
+    "agreement": true,
+    "result_test": null,
+    "result_game": null
   }
 ]

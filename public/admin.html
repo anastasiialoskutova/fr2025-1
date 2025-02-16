@@ -30,6 +30,8 @@
                     <p><strong>Дата народження:</strong> ${client.dob}</p>
                     <p><strong>Стать:</strong> ${client.gender}</p>
                     <p><strong>Країна:</strong> ${client.country}</p>
+                    <p><strong>Улюблений колір:</strong> ${client.color || "Не вказано"}</p>
+                    <p><strong>Коментар:</strong> ${client.comment || "Немає коментаря"}</p>
                     <img src="http://localhost:3000/${client.photo}" width="100" alt="Фото профілю">
                     <br>
                     <button onclick="editClient(${client.id})">Редагувати</button>
