@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Реєстрація клієнта</h2>
+        <form id="registrationForm" action="/registration" method="post" enctype="multipart/form-data">
+            <label for="name">Ім'я та Прізвище:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Підтвердження пароля:</label>
+            <input type="password" id="confirmPassword" required><br>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label>Стать:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Чоловіча</label><br>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Жіноча</label><br>
+
+            <label for="country">Країна:</label>
+            <select id="country" name="country" required>
+                <option value="Україна">Україна</option>
+                <option value="США">США</option>
+                <option value="Польща">Польща</option>
+                <option value="Польща">Китай</option>
+                <option value="Польща">Італія</option>
+            </select><br>
+
+            <label for="agreement">Згода на обробку даних:</label><br>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement" value="true">Я погоджуюсь</label><br>
+
+            <label for="photo">Фото профілю:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <button type="submit">Зареєструватися</button><br><br>
+
+            <label for="result_test">Result Test:</label>
+            <input type="text" id="result_test" name="result_test"><br>
+
+            <label for="result_game">Result Game:</label>
+            <input type="text" id="result_game" name="result_game"><br>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
