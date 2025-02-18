@@ -14,5 +14,21 @@
     "agreement": true,
     "result_test": null,
     "result_game": null
+  },
+  {
+    "id": 2,
+    "name": "Anastasiia Loskutova",
+    "email": "anastasiia.loskutbznbova@lnu.edu.ua",
+    "password": "$2b$10$j3qFVoHOpIagp.lEH/QuDuWgRjgSGCyY.YCzLULBtkiSuH9N0uf4.",
+    "phone": "0666260082",
+    "dob": "2025-02-12",
+    "gender": "Чоловіча",
+    "country": "Польща",
+    "color": "Блакитний",
+    "comment": "татат",
+    "photo": "1739909267842.jpg",
+    "agreement": true,
+    "result_test": null,
+    "result_game": null
   }
 ]
